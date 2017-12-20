@@ -1,18 +1,15 @@
 // For disabling the discrete GPU
 
-DefinitionBlock("", "SSDT", 2, "hack", "D-DGPU", 0)
+DefinitionBlock ("", "SSDT", 2, "hack", "D-DGPU", 0)
 {
-    External(_SB.PCI0.PEG0.PEGP._OFF, MethodObj)
-    External(_SB.PCI0.PEGP.DGFX._OFF, MethodObj)
+    External (_SB_.PCI0.RP01.PXSX._OFF, MethodObj)
 
-    Device(RMD1)
+    Device (DGPU)
     {
-        Name(_HID, "RMD10000")
-        Method(_INI)
+        Name (_HID, "DGPU1000")
+        Method (_INI, 0, NotSerialized)
         {
-            // disable discrete graphics (Nvidia/Radeon) if it is present
-            If (CondRefOf(\_SB.PCI0.PEG0.PEGP._OFF)) { \_SB.PCI0.PEG0.PEGP._OFF() }
-            If (CondRefOf(\_SB.PCI0.PEGP.DGFX._OFF)) { \_SB.PCI0.PEGP.DGFX._OFF() }
+            If (CondRefOf (\_SB.PCI0.RP01.PXSX._OFF)) { \_SB.PCI0.RP01.PXSX._OFF () }
         }
     }
 }

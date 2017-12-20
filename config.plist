@@ -10,97 +10,11 @@
 			<false/>
 			<key>DropOEM_DSM</key>
 			<false/>
-			<key>Name</key>
-			<string>DSDT.aml</string>
 			<key>Patches</key>
 			<array>
 				<dict>
 					<key>Comment</key>
-					<string>change OSID to XSID (to avoid match against _OSI XOSI patch)</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					T1NJRA==
-					</data>
-					<key>Replace</key>
-					<data>
-					WFNJRA==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _OSI to XOSI, pair with SSDT-XOSI.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X09TSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WE9TSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change _DSM to XDSM</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					X0RTTQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WERTTQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change EC0 to EC</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					RUMwXw==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUNfXw==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change H_EC to EC</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					SF9FQw==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUNfXw==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change ECDV to EC</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					RUNEVg==
-					</data>
-					<key>Replace</key>
-					<data>
-					RUNfXw==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change HDAS to HDEF, optionally pair with SSDT-HDEF.aml</string>
+					<string>change HDAS to HDEF</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
@@ -114,26 +28,26 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>change _OSI to XOSI</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X09TSQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WE9TSQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change HECI to IMEI</string>
 					<key>Disabled</key>
 					<false/>
 					<key>Find</key>
 					<data>
 					SEVDSQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					SU1FSQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change MEI to IMEI</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					TUVJXw==
 					</data>
 					<key>Replace</key>
 					<data>
@@ -156,37 +70,9 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change SAT0 to SATA, optionally pair with SSDT-SATA.aml</string>
-					<key>Disabled</key>
-					<false/>
-					<key>Find</key>
-					<data>
-					U0FUMA==
-					</data>
-					<key>Replace</key>
-					<data>
-					U0FUQQ==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
-					<string>change XHC1 to XHC</string>
-					<key>Disabled</key>
-					<true/>
-					<key>Find</key>
-					<data>
-					WEhDMQ==
-					</data>
-					<key>Replace</key>
-					<data>
-					WEhDXw==
-					</data>
-				</dict>
-				<dict>
-					<key>Comment</key>
 					<string>change XHCI to XHC</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>
 					WEhDSQ==
@@ -198,30 +84,30 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Method(_Q10,0,N) to XQ10, optionally pair with SSDT-FN.aml</string>
+					<string>change XHC1 to XHC</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>
-					X1ExMAA=
+					WEhDMQ==
 					</data>
 					<key>Replace</key>
 					<data>
-					WFExMAA=
+					WEhDXw==
 					</data>
 				</dict>
 				<dict>
 					<key>Comment</key>
-					<string>change Method(_Q11,0,N) to XQ11, optionally pair with SSDT-FN.aml</string>
+					<string>change SAT0 to SATA</string>
 					<key>Disabled</key>
-					<true/>
+					<false/>
 					<key>Find</key>
 					<data>
-					X1ExMQA=
+					U0FUMA==
 					</data>
 					<key>Replace</key>
 					<data>
-					WFExMQA=
+					U0FUQQ==
 					</data>
 				</dict>
 			</array>
@@ -257,7 +143,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-v darkwake=0 -lilubeta -lgdvmtbeta -alcbeta</string>
+		<string>darkwake=0 -lilubeta -lgdvmtbeta -alcbeta abm_firstpolldelay=16000</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultVolume</key>
@@ -278,8 +164,15 @@
 		<key>UseARTFrequency</key>
 		<true/>
 	</dict>
+	<key>Comment</key>
+	<string>Common patches not specific to a graphics device</string>
 	<key>Devices</key>
 	<dict>
+		<key>Audio</key>
+		<dict>
+			<key>Inject</key>
+			<string>3</string>
+		</dict>
 		<key>USB</key>
 		<dict>
 			<key>FixOwnership</key>
@@ -310,7 +203,7 @@
 			<key>Legacy</key>
 			<false/>
 			<key>Linux</key>
-			<false/>
+			<true/>
 			<key>Tool</key>
 			<false/>
 		</dict>
@@ -321,19 +214,19 @@
 	</dict>
 	<key>Graphics</key>
 	<dict>
-		<key>DualLink</key>
-		<integer>1</integer>
 		<key>Inject</key>
 		<dict>
 			<key>ATI</key>
 			<false/>
 			<key>Intel</key>
-			<false/>
+			<true/>
 			<key>NVidia</key>
 			<false/>
 		</dict>
 		<key>NvidiaSingle</key>
 		<false/>
+		<key>ig-platform-id</key>
+		<string>0x191b0000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -346,8 +239,6 @@
 		<key>DellSMBIOSPatch</key>
 		<false/>
 		<key>KernelCpu</key>
-		<false/>
-		<key>KernelHaswellE</key>
 		<false/>
 		<key>KernelLapic</key>
 		<true/>
@@ -370,6 +261,8 @@
 				</data>
 			</dict>
 		</array>
+		<key>KernelXCPM</key>
+		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -408,36 +301,18 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>2GB</string>
+				<string>change F%uT%04x to F%uTxxxx in AppleBacklightInjector.kext (credit RehabMan)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				AQMDAwAAIAIAAFABAAAAYA==
+				RiV1VCUwNHgA
 				</data>
 				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<string>com.apple.driver.AppleBacklight</string>
 				<key>Replace</key>
 				<data>
-				AQMDAwAAIAIAAFABAAAAgA==
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.13 (based on Austere.J patch by PMheart)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				TIlVuHZA
-				</data>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				TIlVuOtA
+				RiV1VHh4eHgA
 				</data>
 			</dict>
 		</array>
@@ -456,9 +331,9 @@
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP141.88Z.0167.B00.1708080034</string>
+		<string>MBP131.88Z.0212.B00.1708080127</string>
 		<key>Board-ID</key>
-		<string>Mac-B4831CEBD52A0C4C</string>
+		<string>Mac-473D31EABEB93F9B</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardType</key>
@@ -476,9 +351,9 @@
 		<key>Mobile</key>
 		<true/>
 		<key>ProductName</key>
-		<string>MacBookPro14,1</string>
+		<string>MacBookPro13,1</string>
 		<key>SerialNumber</key>
-		<string>C02T22FKHV29</string>
+		<string>C02VYLTHGVC1</string>
 		<key>Trust</key>
 		<true/>
 		<key>Version</key>
@@ -487,7 +362,7 @@
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>Detect</string>
+		<string>Yes</string>
 	</dict>
 </dict>
 </plist>
